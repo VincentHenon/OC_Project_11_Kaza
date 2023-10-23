@@ -22,6 +22,7 @@ a {
 body {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -47,7 +48,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 34px;
   letter-spacing: 0em;
@@ -86,13 +87,14 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 68px;
   letter-spacing: 0em;
   text-align: center;
   white-space: nowrap;
   color: white;
+  width: 80vw;
 }
 
 /* THUMB */
@@ -116,7 +118,7 @@ header {
   bottom: 0;
   left: 0;
   color: #FFF;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -142,10 +144,27 @@ header {
   border-radius: 25px;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 60px; 
   place-items: center;
+  
+  /* display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; */
 }
+
+/* .galleryWrapper a:last-child {
+  margin-right: auto;
+} */
+
+/* .galleryWrapper::after {
+  content: "";
+  flex: auto;
+} */
 
 /* FOOTER */
 footer {
@@ -155,6 +174,7 @@ footer {
   align-items: center;
   background-color: #000;
   height: 209px;
+  margin-top: 25px;
 }
 
 footer img {
@@ -166,7 +186,7 @@ footer p{
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -184,7 +204,7 @@ footer p{
 
 .page404Big {
   color: #FF6060;
-  font-size: 288px;
+  font-size: 18rem;
   font-style: normal;
   font-weight: 700;
   line-height: 142.6%;
@@ -192,7 +212,7 @@ footer p{
 
 .page404Oups {
   color: #FF6060;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -200,7 +220,7 @@ footer p{
 
 .page404Home {
   color: #FF6060;
-  font-size: 18px;
+  font-size: 1.125;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -221,7 +241,7 @@ footer p{
 
 .infoTitle {
   color: #FF6060;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -229,7 +249,7 @@ footer p{
 
 .infoLocation {
   color: #FF6060;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -268,7 +288,7 @@ footer p{
   background-color: #FF6060;
   padding: 3px 22px;
   color: #FFF;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -298,7 +318,7 @@ footer p{
 .hostName span {
   color: #FF6060;
   text-align: right;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -324,6 +344,7 @@ footer p{
   border-radius: 25px;
   object-fit: cover;
   filter: brightness(0.7);
+  margin-bottom: 25px;
 }
 
 /* DROPMENU */
@@ -344,7 +365,7 @@ footer p{
 
 .menuTitleWrapper p {
   color: #FFF;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -352,7 +373,7 @@ footer p{
 
 .menuTitleWrapper i {
   color: #FFF;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: all .3s ease-in-out;
   margin-top: auto;
   margin-bottom: auto;
@@ -375,7 +396,7 @@ footer p{
   background-color: #F6F6F6;
   border-radius: 0 0 10px 10px;
   color: #FF6060;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 142.6%;
@@ -413,7 +434,7 @@ footer p{
   text-align: center;
   color: #FFF;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -424,7 +445,7 @@ footer p{
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  font-size: 100px;
+  font-size: 5rem;
   color: #FFF;
   margin-left: 20px;
 }
@@ -434,7 +455,7 @@ footer p{
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  font-size: 100px;
+  font-size: 5rem;
   color: #FFF;
   margin-right: 20px;
 }
@@ -448,7 +469,8 @@ footer p{
 
   /* HEADER */
   header {
-    margin: 25px 20px;
+    margin: 25px 20px 0 20px;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -460,9 +482,9 @@ footer p{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 26px;
+    gap: 25px;
     flex: 1 0 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     line-height: 142.6%;
     color: #FF6060;
@@ -470,7 +492,6 @@ footer p{
 
   /* FOOTER */
   footer {
-    margin-top: 66px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -484,7 +505,7 @@ footer p{
     height: auto;
     width: 134px;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 142.6%;
 
   }
@@ -493,20 +514,20 @@ footer p{
   .heroBannerWrapper {
     height: 111px;
   }
-  
+
   .heroBannerImg {
-    width: 335px;
+    width: 100%;
     height: 111px;
     border-radius: 10px;
   }
   
   .heroBannerText {
     width: 335px;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     text-align: left;
     white-space: pre-wrap;
-    padding-left: 16px;
+    padding-left: 30px;
   }
 
   /* THUMB */
@@ -525,6 +546,11 @@ footer p{
     gap: 20px; 
     padding: 0; 
   }
+ 
+  .galleryWrapper a {
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
   /* CAROUSEL */
   .carouselWrapper {
@@ -541,12 +567,12 @@ footer p{
   }
 
   .carouselWrapper .chevronLeft{
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-left: 10px;
   }
 
   .carouselWrapper .chevronRight{
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-right: 10px;
   }
 
@@ -557,11 +583,11 @@ footer p{
   }
 
   .infoTitle {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .menuWrapper {
-    margin: 13px 0 38px 0;
+    margin: 13px 0 0 0;
   }
 
   .housingPageWrapper .menuWrapper {
@@ -569,17 +595,17 @@ footer p{
   }
 
   .infoLocation {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   /* TAG */
   .tagElement {
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   /* DROPMENU */
   .menuContent {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .menuTitleWrapper {
@@ -587,11 +613,11 @@ footer p{
   }
 
   .menuTitleWrapper p {
-    font-size: 13px;
+    font-size: 0.813rem;
   }
 
   .menuTitleWrapper i {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .active .menuTitleWrapper {
@@ -616,15 +642,15 @@ footer p{
   }
 
   .page404Big {
-    font-size: 96px;
+    font-size: 6rem;
   }
 
   .page404Oups {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .page404Home {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 34px;
   }
 
@@ -643,11 +669,129 @@ footer p{
   }
 
   .hostName span{
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   /* RATINGS */
   .solidStar, .hollowStar {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
+}
+
+/* TABLET LAYOUT */
+@media screen and (min-width: 376px) and (max-width: 750px) {
+  main {
+    margin: 0 20px;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  header {
+    margin: 25px 20px 10px 20px;
+  }
+
+  .logo {
+    height: auto;
+    width: 100px;
+  }
+  
+  .navbar {
+    font-size: 1.125rem;
+    gap: 30px;
+  }
+
+  /* FOOTER */
+  footer p{
+    font-size: 1rem;
+  }
+
+  /* HERO BANNER  */
+  .heroBannerWrapper {
+    margin: 10px 0 25px 0;
+  }
+
+  .heroBannerText {
+    font-size: 1.75rem;
+    padding:0 15px;
+    white-space: pre-wrap;
+  }
+
+  /* GALLERY */
+  .galleryWrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* THUMB */
+  .thumbWrapper {
+    min-width: 300px;
+  }
+  
+  /* PAGE HOUSING */
+  .infoWrapper {
+    flex-direction: column;
+  }
+
+  .infoTitle {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* HOST */
+  .hostWrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  /* DROPDOWN MENU */
+  .menuAbout {
+    margin: 0 50px;
+  }
+
+  .menuTitleWrapper p{
+    font-size: 1rem;
+  }
+
+  .menuTitleWrapper i {
+    font-size: 1rem;
+  }
+
+  /* CAROUSEL */
+  .carouselWrapper .chevronRight, .carouselWrapper .chevronLeft {
+    font-size: 4rem;
+  }
+
+  /* RATINGS */
+  .solidStar, .hollowStar {
+    font-size: 1.25rem;
+  }
+}
+
+/* SMALL SCREEN LAYOUT*/
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+    /* MAIN */
+    main {
+      margin: 0 30px;
+    }
+    header {
+      margin: 25px 30px 25px 30px;
+    }
+
+    /* HERO BANNER  */
+    .heroBannerText {
+      font-size: 2.2rem;
+      padding:0 15px;
+      line-break: normal;
+      overflow-wrap: break-word;
+    }
+    /* GALLERY */
+    .galleryWrapper {
+      gap: 30px;
+      padding: 30px;
+    }
 }

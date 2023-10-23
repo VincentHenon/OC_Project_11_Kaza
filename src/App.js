@@ -2,10 +2,10 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Header from './layout/header';
 import Footer from './layout/footer';
-import Home from './pages/home';
-import About from './pages/about';
-import Housing from './pages/housing';
-import Page404 from './pages/404';
+import Home from './pages/Home';
+import About from './pages/About';
+import Housing from './pages/Housing';
+import Page404 from './pages/Page404';
 
 function App() {
   return (

@@ -12,7 +12,7 @@ function DropMenu(props) {
         <p>{ props.title }</p>
         <i className= "menuChevron fa-solid fa-chevron-up" ></i>
       </div>
-      <p className="menuContent">{ props.content }</p>
+      <div className="menuContent">{ props.content }</div>
     </div>
   )
 }

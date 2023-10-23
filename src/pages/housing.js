@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel'
 import Tag from '../components/Tag'
 import DropMenu from '../components/DropMenu'
 import Host from '../components/Host'
+import Page404 from './Page404'
 
 function Housing() {
     // extracting the id from the url
@@ -17,7 +18,8 @@ function Housing() {
   
     // fallback where data is not loaded
     if (!thumbData) {
-      return <div className='dataError' >Oups! Nous n'arrivons pas à charger les données de la page!</div>
+      //return <div className='dataError' >Oups! Nous n'arrivons pas à charger les données de la page!</div>
+      return <Page404 />
     }
 
     return (
