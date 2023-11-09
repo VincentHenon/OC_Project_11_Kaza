@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 function DropMenu(props) {
-  const [isActive, setIsActive] = useState(false); //set state to false by default
+  const [isActive, setIsActive] = useState(false) //set state to false by default
   const toggleActive= ()=> {
     setIsActive(!isActive)
   }

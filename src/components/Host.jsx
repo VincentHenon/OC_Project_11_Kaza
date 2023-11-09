@@ -1,8 +1,8 @@
 import React from 'react'
-import Rating from './Rating';
+import Rating from './Rating'
 
 function Host(props) {
-  const splitNameArray = props.name.split(" ");
+  const splitNameArray = props.name.split(" ")
 
   return (
     <div className="hostWrapper">

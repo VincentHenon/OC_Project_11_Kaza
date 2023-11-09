@@ -7,7 +7,7 @@ function Thumb({ thumb }) {
           <p className="thumbTitle" >{thumb.title}</p>
         </div>
       </Link>
-    );
+    )
   }
 
 export default Thumb
