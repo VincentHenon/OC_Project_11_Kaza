@@ -20,6 +20,14 @@ function Carousel(props) {
     )
   }
 
+  if (maxNbr < 1) {
+    return (
+      <div className="carouselWrapper">      
+        <p>il n'y a aucune image pour ce logement :-/</p>
+      </div>
+    )
+  }
+
   return (
     <div className="carouselWrapper">      
       <i className="chevronLeft fa-solid fa-chevron-left" onClick={prevImage}></i>
